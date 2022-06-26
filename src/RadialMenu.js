@@ -1,13 +1,21 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { store } from 'app/store';
-import App from 'App';
-import reportWebVitals from 'reportWebVitals';
 import 'RadialMenu.scss';
+import Center from 'components/Center';
+import Segment from 'components/Segment';
 
 const RadialMenu = () => {
-
+  return (
+    <div className="radialMenu">
+      <div className="radialMenu-container">
+        <Center>
+          <Segment/>
+          <Segment/>
+          <Segment/>
+          <Segment/>
+        </Center>
+      </div>
+    </div>
+  )
 };
 
 export default RadialMenu;

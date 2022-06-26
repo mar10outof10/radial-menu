@@ -1,12 +1,14 @@
 import React from 'react';
-import { Counter } from 'features/counter/Counter';
+import RadialMenu from 'RadialMenu';
 import 'App.scss';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter />
+        <div className="component-container">
+          <RadialMenu />          
+        </div>
       </header>
     </div>
   );
