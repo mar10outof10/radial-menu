@@ -4,7 +4,7 @@ import Line from 'components/Line';
 
 const Segment = () => {
   return (
-    <div>
+    <div className="radialMenu-segment">
       <Line style={{height: "75px", width: "100px", position: "absolute", top: "100px"}}>
         Asdf
       </Line>

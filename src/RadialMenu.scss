@@ -15,5 +15,60 @@
     height: 100px;
     width: 100px;
     border: solid black 5px;
+ 
+  }
+
+  &-segment {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+
+    &:first-child {
+      top: -210px;
+      left: -10px;
+    }
+  }
+
+  &-line-container {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+
+    &:first-child {
+      width: 100px;
+    }
+
+    &:nth-child(2) {
+      width: 150px;
+    }
+    
+    &:nth-child(3) {
+      width: 200px;
+    }
+
+  }
+
+  &-text-container {
+    height: 90px;
+  }
+
+  &-line {
+    height: 10px;
+    background-color:black;
+
+    &:first-child {
+      width: 100px;
+    }
+
+    &:nth-child(2) {
+      width: 150px;
+    }
+    
+    &:nth-child(3) {
+      width: 200px;
+    }
   }
 }
