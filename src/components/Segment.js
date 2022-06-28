@@ -5,13 +5,13 @@ import Line from 'components/Line';
 const Segment = () => {
   return (
     <div>
-      <Line>
+      <Line style={{height: "75px", width: "100px", position: "absolute", top: "100px"}}>
         Asdf
       </Line>
-      <Line>
+      <Line style={{height: "75px", width: "100px", position: "absolute", top: "100px"}}>
         Hey
       </Line>
-      <Line>
+      <Line style={{height: "75px", width: "100px", position: "absolute", top: "100px"}}>
         Lorem Ipsum
       </Line>
 
