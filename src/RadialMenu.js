@@ -28,17 +28,18 @@ const RadialMenu = () => {
   }
   
   const [view, dispatchView] = useReducer(viewReducer, {
-    rotation: "0deg"
+    rotation: "0deg",
+    rotateID: 0,
   })
-  
+
   return (
     <div className="radialMenu">
       <div className="radialMenu-container">
-        <Center dispatchView={dispatchView} view={view}>
-          <Segment segmentAction={segmentAction[4 % (0 + view.rotateID)]} dispatchView={dispatchView} />
-          <Segment segmentAction={segmentAction[4 % (1 + view.rotateID)]} dispatchView={dispatchView} />
-          <Segment segmentAction={segmentAction[4 % (2 + view.rotateID)]} dispatchView={dispatchView} />
-          <Segment segmentAction={segmentAction[4 % (3 + view.rotateID)]} dispatchView={dispatchView} />
+        <Center dispatchView={dispatchView} view={view} style={{transform: view.rotation}}>
+          <Segment segmentAction={segmentAction[0]} dispatchView={dispatchView} />
+          <Segment segmentAction={segmentAction[3]} dispatchView={dispatchView} />
+          <Segment segmentAction={segmentAction[2]} dispatchView={dispatchView} />
+          <Segment segmentAction={segmentAction[1]} dispatchView={dispatchView} />
         </Center>
       </div>
     </div>

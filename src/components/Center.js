@@ -2,9 +2,9 @@ import React from 'react';
 import 'RadialMenu.scss';
 import Segment from 'components/Segment';
 
-const Center = ({children}) => {
+const Center = ({children, view}) => {
   return (
-    <div className="radialMenu-center">
+    <div className="radialMenu-center" style={{transform: `rotate(${view.rotation})`}}>
       {children}
     </div>
   )

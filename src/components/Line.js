@@ -1,9 +1,9 @@
 import React from 'react';
 import 'RadialMenu.scss';
 
-const Line = ({children}) => {
+const Line = ({children, segmentAction, dispatchView}) => {
   return (
-    <div className="radialMenu-line-container">
+    <div onClick={() => dispatchView({type: segmentAction})} className="radialMenu-line-container">
       <div className="radialMenu-text-container">
         {children}
       </div>
