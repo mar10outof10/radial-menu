@@ -1,7 +1,19 @@
 .radialMenu {
+  box-sizing: border-box;
+
   &-container {
-    width: 750px;
-    height: 750px;
+    width: 700px;
+    height: 700px;
     background: grey;
+    position: relative;
+  }
+
+  &-center {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    height: 100px;
+    width: 100px;
+    border: solid black 5px;
   }
 }

@@ -2,13 +2,10 @@ import React from 'react';
 import 'RadialMenu.scss';
 import Segment from 'components/Segment';
 
-const Center = () => {
+const Center = ({children}) => {
   return (
     <div className="radialMenu-center">
-      <Segment />
-      <Segment />
-      <Segment />
-      <Segment />
+      {children}
     </div>
   )
 }
